@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kokonut UI Clone
 
-## Getting Started
+A production-grade clone of the [KokonutUI](https://kokonutui.com) documentation website, built with Next.js, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+kokonutui-clone/
+├── src/
+│   ├── app/                    # Next.js App Router pages
+│   │   ├── docs/               # Documentation pages
+│   │   │   ├── components/     # Dynamic component pages
+│   │   │   │   └── [slug]/     # Component detail pages
+│   │   │   ├── layout.tsx      # Docs layout wrapper
+│   │   │   └── page.tsx        # Installation page
+│   │   ├── globals.css         # Global styles
+│   │   ├── layout.tsx          # Root layout with ThemeProvider
+│   │   └── page.tsx            # Home page
+│   ├── components/
+│   │   ├── demos/              # Component demo implementations
+│   │   ├── layout/             # Header, Sidebar, DocsLayout
+│   │   └── ui/                 # Reusable UI components
+│   ├── hooks/                  # Custom React hooks
+│   └── lib/                    # Utilities and constants
+├── docs/
+│   └── spec/
+│       └── SPEC.md             # Full specification document
+├── public/                     # Static assets
+└── README.md                   # This file
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Features
 
-## Learn More
+### Implemented
 
-To learn more about Next.js, take a look at the following resources:
+- ✅ **Global Shell**: Header with logo, search, theme toggle
+- ✅ **Sidebar Navigation**: All component categories with badges
+- ✅ **Theme Switching**: Light/Dark/System modes with persistence
+- ✅ **Search Modal**: ⌘K trigger, keyboard navigation, category grouping
+- ✅ **Install Commands**: npm/bun/pnpm tabs with copy button
+- ✅ **Component Pages**: Dynamic routing for all 40+ components
+- ✅ **Demo Components**: Loader, Particle Button, Glitch Text, Matrix Text, Shimmer Text, Typewriter
+- ✅ **Responsive Design**: Mobile sidebar drawer, adaptive layouts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Coming Soon
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 🔲 All component demos
+- 🔲 MDX content pipeline
+- 🔲 Full test suite
+- 🔲 Accessibility audit
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Theme**: next-themes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📖 Documentation
+
+- [SPEC.md](./docs/spec/SPEC.md) - Full specification with route inventory, behaviors, and design notes
+- [ARCHITECTURE.md](./ARCHITECTURE.md) - Technical architecture decisions
+- [ROUTES.md](./ROUTES.md) - Route mapping and purposes
+- [COMPONENTS.md](./COMPONENTS.md) - Component catalog with props
+
+## 🧪 Testing
+
+```bash
+# Run type checking
+npm run type-check
+
+# Run ESLint
+npm run lint
+
+# Run all tests (when implemented)
+npm test
+```
+
+## 📝 License
+
+This is a clean-room implementation for educational purposes. No proprietary code was used.

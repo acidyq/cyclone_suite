@@ -1,0 +1,123 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "title": "Home",
+      "description": "Cyclone Suite - Beautiful React Components",
+      "type": "landing"
+    },
+    {
+      "path": "/docs",
+      "title": "Installation",
+      "description": "Get started with Cyclone Suite",
+      "type": "docs",
+      "category": "Get Started"
+    },
+    {
+      "path": "/docs/components/loader",
+      "title": "Loader",
+      "description": "Simple Loading",
+      "type": "component",
+      "category": "Components",
+      "package": "@cyclonesuite/loader"
+    },
+    {
+      "path": "/docs/components/slide-text-button",
+      "title": "Slide Text Button",
+      "description": "Animated sliding text button",
+      "type": "component",
+      "category": "Components",
+      "package": "@cyclonesuite/slide-text-button",
+      "isNew": true
+    },
+    {
+      "path": "/docs/components/particle-button",
+      "title": "Particle Button",
+      "description": "Particle Button Animation on click",
+      "type": "component",
+      "category": "Buttons",
+      "package": "@cyclonesuite/particle-button"
+    },
+    {
+      "path": "/docs/components/glitch-text",
+      "title": "Glitch Text",
+      "description": "Glitch/distortion effect",
+      "type": "component",
+      "category": "Texts",
+      "package": "@cyclonesuite/glitch-text"
+    },
+    {
+      "path": "/docs/components/matrix-text",
+      "title": "Matrix Text",
+      "description": "Matrix-style falling characters",
+      "type": "component",
+      "category": "Texts",
+      "package": "@cyclonesuite/matrix-text"
+    },
+    {
+      "path": "/docs/components/shimmer-text",
+      "title": "Shimmer Text",
+      "description": "Shimmer/shine animation",
+      "type": "component",
+      "category": "Texts",
+      "package": "@cyclonesuite/shimmer-text"
+    },
+    {
+      "path": "/docs/components/typewriter",
+      "title": "Typing Text",
+      "description": "Typewriter effect",
+      "type": "component",
+      "category": "Texts",
+      "package": "@cyclonesuite/typewriter"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Get Started",
+      "slug": "get-started",
+      "pageCount": 1
+    },
+    {
+      "name": "Components",
+      "slug": "components",
+      "pageCount": 21
+    },
+    {
+      "name": "AI",
+      "slug": "ai",
+      "pageCount": 5
+    },
+    {
+      "name": "Texts",
+      "slug": "texts",
+      "pageCount": 8
+    },
+    {
+      "name": "Buttons",
+      "slug": "buttons",
+      "pageCount": 8
+    }
+  ],
+  "externalLinks": [
+    {
+      "name": "Agenta",
+      "url": "https://cyclonesuite.dev/templates#agenta",
+      "label": "Pro"
+    },
+    {
+      "name": "Lume",
+      "url": "https://cyclonesuite.dev/templates#lume",
+      "label": "Pro"
+    },
+    {
+      "name": "Sonae",
+      "url": "https://cyclonesuite.dev/templates#sonae",
+      "label": "Pro"
+    }
+  ],
+  "meta": {
+    "generatedAt": "2026-02-08T12:53:04-05:00",
+    "totalPages": 43,
+    "totalCategories": 5
+  }
+}
