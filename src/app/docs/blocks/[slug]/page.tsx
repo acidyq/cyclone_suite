@@ -1,10 +1,15 @@
-"use client";
 
 import { notFound } from "next/navigation";
 import { BLOCK_DATA } from "@/lib/constants";
 import { ComponentPage } from "@/components/ui/component-page";
 import { InstallCommand } from "@/components/ui/install-command";
-import { use } from "react";
+
+// Generate static params for all blocks
+export async function generateStaticParams() {
+    return Object.keys(BLOCK_DATA).map((slug) => ({
+        slug,
+    }));
+}
 
 // Block demos
 import { HeroBlockDemo } from "@/components/blocks/hero-block";
@@ -36,8 +41,8 @@ const BLOCK_DEMO_MAP: Record<string, React.ComponentType> = {
     "stats": StatsBlockDemo,
 };
 
-export default function BlockSlugPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = use(params);
+export default async function BlockSlugPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
     const block = BLOCK_DATA[slug];
 
     if (!block) {
