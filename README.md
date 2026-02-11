@@ -1,6 +1,6 @@
-# Kokonut UI Clone
+# Cyclone Suite
 
-A production-grade clone of the [KokonutUI](https://kokonutui.com) documentation website, built with Next.js, Tailwind CSS, and Framer Motion.
+A production-grade collection of webdev UI componentsbuilt with Next.js, Tailwind CSS, and Framer Motion.
 
 ## 🚀 Quick Start
 
